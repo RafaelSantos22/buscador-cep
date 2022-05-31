@@ -1,0 +1,89 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(70, 68, 68);
+}
+
+.title {
+    font-size: 90px;
+    color: #fff;
+    animation: title 2s;
+    text-align: center;
+}
+
+@keyframes title {
+    from {
+        transform: rotateX(140deg)
+    }
+    to {
+        transform: rotateX(20deg);
+    }
+}
+
+.containerInput {
+    background-color: rgba(255, 255, 255, .2);
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 10px;
+}
+
+.containerInput input {
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #fff;
+    outline: 0;
+    margin-right: 7px;
+}
+
+.containerInput input::placeholder {
+    color: bisque;
+}
+
+.buttonSearch {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 7px;
+    width: 500px;
+}
+
+.main h2 {
+    margin: 16px 0;
+    font-size: 30px;
+}
+
+.main span {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+@media (max-width: 640px) {
+    .title {
+        font-size: 58px;
+    }
+
+    .main h2 {
+        font-size: 20px;
+    }
+
+    .main {
+        width: 80%;
+        min-height: 250px;
+    }
+}
